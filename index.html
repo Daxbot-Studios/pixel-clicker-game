@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pixel Clicker</title>
+		<script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body id="body" style="background-color:#FFCC66;">
+		<div id="maintitle">Pixel Clicker</div>
+		<br />
+		
+		<!--BEGINNING OF LEFTBAR-->
+		<div class="mainsection" id="LeftBar">
+			<div id="LeftBarInside">
+				<p class="CountVar">Pixels Per Second (PPS): <span id="PixelsPerSecond">0</span></p>
+			</div>
+		</div>
+		<!--END OF LEFTBAR-->
+		
+		<!--BEGINNING OF MIDDLEBAR-->
+		<div class="mainsection" id="MiddleBar">
+			<div id="MiddleBarInside">
+				<!--MAINBUTTON-->
+				<div id="clickme" onclick="pixelClick(1)">Paint Pixels</div>
+				<div id="PIXELDIV">
+					<!--How much Pixels you have-->
+					<p id="PixelCount" class="CountVar">Pixels: <span id="pixels">0</span></p>
+					</div>
+					
+			</div>
+		</div>
+		<!--END OF MIDDLEBAR-->
+		
+		<!--BEGINNING OF RIGHTBAR-->
+		<div class="mainsection" id="RightBar">
+			<div id="RightBarInside">
+				<p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost">10</span></p>
+				<p class="CountVar">Doodlers(0.1 PPS): <span id="Doodlers">0</span></p>
+				<div id="buyDoodler" onclick="buyDoodler()">Hire Random Doodler</div>
+			</div>	
+		</div>
+		<!--END OF RIGHTBAR-->
+		
+	</body>
+</html>
