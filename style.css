@@ -1,0 +1,139 @@
+#head {
+	background-color:#FFD685;
+}
+
+#maintitle{
+	position:relative;
+	border: 10px solid;
+	border-color:FFE5B5;
+	color:white;
+	width:98%;
+	height:50px;
+	font-family: 'Audiowide', cursive;
+	font-size:40px;
+	text-align:center;
+	background-color:#FFD685;
+}
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Audiowide'), local('Audiowide-Regular'), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+.CountVar {
+	font-family: 'Audiowide';
+}
+#buyDoodler:hover {
+	cursor:default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#buyDoodler {
+	border: 10px solid;
+	width:200px;
+	border-color:#FFCC66;
+	border-radius:50px;
+	color:white;
+	background-color:orange;
+	font-family: 'Audiowide', cursive;
+	text-align:center;
+}
+
+#clickme{
+	border: 10px solid;
+	margin: 10px;
+	
+	height:170px;
+	width:170px;
+	
+	
+	border-color:#FFCC66;
+	border-radius:50px;
+	
+	color:white;
+	background-color:orange;
+	font-family: 'Audiowide', cursive;
+	text-align:center;
+	font-size:50px;
+}
+
+#clickme:hover{
+	cursor:default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#body{
+	font-family: 'Audiowide', cursive;
+	color:white;
+	background-color:#FFD685;
+	position:relative;
+}
+
+#MiddleBar{
+	background-color:white;
+	float:left;
+	width:33%;
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+	border:1px;
+	border-color:black;
+	
+}
+
+#LeftBar{
+	background-color:white;
+	float:left;
+	width:33%;
+}
+
+#RightBar{
+	background-color:white;
+	float:left;
+	width:33%;
+	height:max-height;
+}
+
+.mainsection {
+	border-radius:25px;
+	text-align:center;
+}
+
+#LeftBarInside{
+	margin:5px;
+	background-color:rgb(255, 178, 128);
+	padding:10px;
+	border-radius:25px;
+}
+
+#MiddleBarInside{
+	margin:5px;
+	padding:10px;
+	background-color:rgb(255, 155, 130);
+	border-radius:25px;
+	width:100%;
+}
+
+#RightBarInside{
+	padding:10px;
+	margin:5px;
+	background-color:rgb(255, 178, 209);
+	border-radius:25px;
+}
+
+#PIXELDIV {
+	
+}
