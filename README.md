@@ -1,4 +1,5 @@
 pixel-clicker
 =============
 
-Creation of Creations
+Pixel clicker is a quick project. It is a game of the "Incremental" genre, and thus uses such gameplay elements.
+
