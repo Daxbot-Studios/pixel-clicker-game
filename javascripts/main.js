@@ -19,6 +19,7 @@ function buyDoodler(){
         document.getElementById('Doodlers').innerHTML = Doodlers; //updates the number of Doodlers for the user
         document.getElementById('pixels').innerHTML = pixels; //updates the number of pixels for the user
     };
+    
     var nextCostDoodler = Math.floor(10 * Math.pow(1.1,Doodlers)); //works out the cost of the next Doodler
     document.getElementById('DoodlerCost').innerHTML = nextCostDoodler; //updates the Doodler cost for the user
 };
@@ -43,7 +44,7 @@ document.getElementById("pixels").innerHTML = pixels;	//updates the pixel value
 };
 
 function PPS(){
-PixelsPerSecond = Doodlers*0.1;	//figures out how much pixels are being made per second
+PixelsPerSecond = (Doodlers*0.1)+(Dabblers*0.3);	//figures out how much pixels are being made per second
 PixelsPerSecond = +PixelsPerSecond.toFixed(2);
 document.getElementById('PixelsPerSecond').innerHTML = PixelsPerSecond;
 };
@@ -51,7 +52,7 @@ document.getElementById('PixelsPerSecond').innerHTML = PixelsPerSecond;
 window.setInterval(function(){
 
 pixelClick(Doodlers*0.1);
-
+pixelClick(Dabblers*0.3);
 
 }, 1000);
 
