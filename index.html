@@ -64,10 +64,14 @@
 
         <!--BEGINNING OF RIGHTBAR-->
         <div class="mainsection" id="RightBar">
-          <div id="RightBarInside">
-            <p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost">10</span></p>
-            <p class="CountVar">Doodlers(0.1 PPS): <span id="Doodlers">0</span></p>
+          <div id="RightBarInside" class="RightBarInside">
+              <p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost" class="Cost">10</span></p>
+              <p class="CountVar">Doodlers(0.1 PPS): <span id="Doodlers">0</span></p>
             <div id="buyDoodler" onclick="buyDoodler()">Hire Random Doodler</div>
+              <br/>
+              <p class="CountVar" onclick="PPS">Dabbler Cost: <span id="DabblerCost" class="Cost">30</span></p>
+              <p class="CountVar">Dabblers(0.3 PPS): <span id="Doodlers">0</span></p>
+            <div id="buyDabbler" onclick="buyDabbler()" class="">Hire Artistic Dabbler</div>
           </div>	
         </div>
         <!--END OF RIGHTBAR-->
