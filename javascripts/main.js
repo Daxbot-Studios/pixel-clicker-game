@@ -19,8 +19,22 @@ function buyDoodler(){
         document.getElementById('Doodlers').innerHTML = Doodlers; //updates the number of Doodlers for the user
         document.getElementById('pixels').innerHTML = pixels; //updates the number of pixels for the user
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,Doodlers)); //works out the cost of the next Doodler
-    document.getElementById('DoodlerCost').innerHTML = nextCost; //updates the Doodler cost for the user
+    var nextCostDoodler = Math.floor(10 * Math.pow(1.1,Doodlers)); //works out the cost of the next Doodler
+    document.getElementById('DoodlerCost').innerHTML = nextCostDoodler; //updates the Doodler cost for the user
+};
+
+var Dabblers = 0;
+
+function buyDabbler(){
+  var DabblerCost = Math.floor(10* Math.pow(1.1,Dabblers));
+  if(pixels >= DabblerCost){
+    Dabblers = Dabblers + 1;
+    pixels = pixels - DabblerCost;
+        document.getElementById('Dabblers').innerHTML = Dabblers
+        document.getElementById('pixels').innerHTML = pixels;
+    };
+    var nextCostDabbler = Math.floor(10 * Math.pow(1.1,Dabblers));
+    document.getElementById('DabblerCost').innerHTML = nextCostDabbler;
 };
 
 function roundPixels() {
