@@ -54,6 +54,8 @@ margin: 10px;
 height:170px;
 width:170px;
 
+cursor:pointer;
+
 
 border-color:#FFCC66;
 border-radius:50px;
@@ -138,4 +140,11 @@ border-radius:25px;
 
 #PIXELDIV {
 
+}
+
+.button:hover {
+  box-shadow: inset 0 0 1em gold;
+  
+  
+  
 }
