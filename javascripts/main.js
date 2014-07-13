@@ -1,7 +1,9 @@
-var pixels = 0;
+var pixels = currency;
+
+var currency = 0;
 
 function pixelRound(){
-Math.round(pixels);
+    Math.round(currency * 100)/100;
 };
 
 function pixelClick(number){
