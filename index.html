@@ -16,8 +16,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Pixel-clicker-game by Daxbot-Studios</title>
-    
-    <link rel="stylesheet" href="stylesheets/style.css">
+    p
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     
@@ -37,6 +36,7 @@
   </head>
   
   <body id="body" style="background-color:#FFCC66;">
+    <br/>
       <div id="maintitle">Pixel Clicker</div>
       <br />
 
@@ -52,7 +52,7 @@
         <div class="mainsection" id="MiddleBar">
           <div id="MiddleBarInside">
             <!--MAINBUTTON-->
-            <div id="clickme" onclick="pixelClick(1)">Paint Pixels</div>
+            <div id="clickme" onclick="pixelClick(1)" class="button">Paint Pixels</div>
               <div id="PIXELDIV">
                 <!--How much Pixels you have-->
                 <p id="PixelCount" class="CountVar">Pixels: <span id="pixels">0</span></p>
@@ -67,11 +67,11 @@
           <div id="RightBarInside" class="RightBarInside">
               <p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost" class="Cost">10</span></p>
               <p class="CountVar">Doodlers(0.1 PPS): <span id="Doodlers">0</span></p>
-            <div id="buyDoodler" onclick="buyDoodler()">Hire Random Doodler</div>
+            <div id="buyDoodler" onclick="buyDoodler()" class="button">Hire Random Doodler</div>
               <br/>
               <p class="CountVar" onclick="PPS">Dabbler Cost: <span id="DabblerCost" class="Cost">30</span></p>
               <p class="CountVar">Dabblers(0.3 PPS): <span id="Doodlers">0</span></p>
-            <div id="buyDabbler" onclick="buyDabbler()" class="">Hire Artistic Dabbler</div>
+            <div id="buyDabbler" onclick="buyDabbler()" class="button">Hire Artistic Dabbler</div>
           </div>	
         </div>
         <!--END OF RIGHTBAR-->
