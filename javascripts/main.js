@@ -1,9 +1,5 @@
 var pixels = 0;
 
-function pixelRound(){
-Math.round(pixels);
-};
-
 function pixelClick(number){
     pixels = pixels + number;
     document.getElementById("pixels").innerHTML = pixels;
@@ -39,7 +35,7 @@ function buyDabbler(){
 };
 
 function roundPixels() {
-pixels = +pixels.toFixed(2);	//rounds the pixel value to 1 decimal place (to stop things like 0.000000004)
+pixels = +pixels.toFixed(1);	//rounds the pixel value to 1 decimal place (to stop things like 0.000000004)
 document.getElementById("pixels").innerHTML = pixels;	//updates the pixel value
 };
 
