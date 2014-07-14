@@ -5,7 +5,7 @@ if(pixels > 0){
     
 } 
 else {
-    
+    pixels = 0
 }
 
 
