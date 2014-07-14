@@ -118,7 +118,7 @@ text-align:center;
 
 #LeftBarInside{
 margin:5px;
-background-color:rgb(255, 178, 128);
+background-color:#5C5C5C;
 padding:10px;
 border-radius:25px;
 }
@@ -126,7 +126,7 @@ border-radius:25px;
 #MiddleBarInside{
 margin:5px;
 padding:10px;
-background-color:rgb(255, 155, 130);
+background-color:#AEAEAE;
 border-radius:25px;
 width:100%;
 }
@@ -134,17 +134,19 @@ width:100%;
 #RightBarInside{
 padding:10px;
 margin:5px;
-background-color:rgb(255, 178, 209);
+background-color:#5C5C5C;
 border-radius:25px;
 }
 
-#PIXELDIV {
-
+.button {
+color:white;
+background-color:orange;
+font-family: 'Audiowide', cursive;
+text-align:center;
+font-size:50px;
+cursor:pointer;
 }
 
 .button:hover {
   box-shadow: inset 0 0 1em gold;
-  
-  
-  
 }
