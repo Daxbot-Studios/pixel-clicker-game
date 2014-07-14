@@ -2,12 +2,15 @@ var pixels = 0;
 
 if(pixels > 0){
     pixels = Math.round(pixels * 100)/100;
-    
-} 
-else {
+} else {
     pixels = 0
 }
 
+
+function pixelClick(number){
+    pixels = pixels + number;
+    document.getElementById("pixels").innerHTML = pixels;
+}
 
 var Doodlers = 0;
 
