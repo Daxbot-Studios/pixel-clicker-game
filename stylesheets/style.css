@@ -50,15 +50,13 @@ text-align:center;
 #clickme{
 border: 10px solid;
 margin: 10px;
+border-color:#FFCC66;
+border-radius:50px;
 
 height:170px;
 width:170px;
 
 cursor:pointer;
-
-
-border-color:#FFCC66;
-border-radius:50px;
 
 color:white;
 background-color:orange;
@@ -143,8 +141,12 @@ color:white;
 background-color:orange;
 font-family: 'Audiowide', cursive;
 text-align:center;
-font-size:50px;
 cursor:pointer;
+
+border: 10px solid;
+margin: 10px;
+border-color:#FFCC66;
+border-radius:50px;
 }
 
 .button:hover {
