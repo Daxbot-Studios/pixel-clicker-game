@@ -155,10 +155,11 @@ border-radius:50px;
 
 #PIXELDIV{
   background-color:orange;
-  height:50%;
-  width:50%;
-  margin:25%;
-  border:white 2px;
+  height:150px;
+  width:150px;
+  margin:25px;
+  border-color:white;
+  border-width:5px;
 }
 
 
