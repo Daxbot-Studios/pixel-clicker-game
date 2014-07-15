@@ -1,11 +1,35 @@
+//===============================================================================================================//
+//===ALL VARIABLES OF GAME=======================================================================================//
+//===============================================================================================================//
+
+var colors = ["red", "blue", "yellow", "green", "orange", "black", "cyan", "magenta"]
 var pixels = 0;
+var Doodlers = 0;
+var Dabblers = 0;
+
+//===============================================================================================================//
+//===ALL FUNCTIONS===============================================================================================//
+//===============================================================================================================//
+
+//MAIN GAME FUNCTIONS
 
 function pixelClick(number){
     pixels = pixels + number;
     document.getElementById("pixels").innerHTML = pixels;
 };
 
-var Doodlers = 0;
+function pixelBox(){
+    PIXELDIV
+    
+}
+
+function changeColor() {
+    //you can as well pass col reference as you do in your code
+    var BigPixelColor = document.getElementById("PIXELDIV").style.backgroundColor;
+    PIXELDIV.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
+}
+
+//BUILDINGS
 
 function buyDoodler(){
     var DoodlerCost = Math.floor(10 * Math.pow(1.1,Doodlers)); //works out the cost of this Doodler
@@ -20,8 +44,6 @@ function buyDoodler(){
     document.getElementById('DoodlerCost').innerHTML = nextCostDoodler; //updates the Doodler cost for the user
 };
 
-var Dabblers = 0;
-
 function buyDabbler(){
   var DabblerCost = Math.floor(10* Math.pow(1.1,Dabblers));
   if(pixels >= DabblerCost){
@@ -34,6 +56,8 @@ function buyDabbler(){
     document.getElementById('DabblerCost').innerHTML = nextCostDabbler;
 };
 
+//OTHER GAME FUNCTIONS
+
 function roundPixels() {
 pixels = +pixels.toFixed(1);	//rounds the pixel value to 1 decimal place (to stop things like 0.000000004)
 document.getElementById("pixels").innerHTML = pixels;	//updates the pixel value
@@ -45,16 +69,18 @@ PixelsPerSecond = +PixelsPerSecond.toFixed(2);
 document.getElementById('PixelsPerSecond').innerHTML = PixelsPerSecond;
 };
 
-window.setInterval(function(){
 
+//===============================================================================================================//
+//===FUNCTION CALLING============================================================================================//
+//===============================================================================================================//
+
+window.setInterval(function(){
 pixelClick(Doodlers*0.1);
 pixelClick(Dabblers*0.3);
 
 }, 1000);
 
 window.setInterval(function(){
-
 PPS();
 roundPixels();
-
 }, 0);
