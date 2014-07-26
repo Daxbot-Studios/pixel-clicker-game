@@ -164,4 +164,13 @@ border-radius:50px;
   border-width:5px;
 }
 
+.sp{
+  background-color:rgb(174, 174, 174);
+  border-radius:inherit;
+  margin:inherit;
+  padding:inherit;
+  border:inherit;
+}
+
+
 
