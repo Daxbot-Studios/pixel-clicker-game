@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+	<!--NOTES TO FUTURE SELF OR OTHER PEOPLE READING THIS--->
+	<!--SP = "Shop-Piece" just in case I forget          --->
   <head>
 	<script>
     		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -64,13 +66,17 @@
         <!--BEGINNING OF RIGHTBAR-->
         <div class="mainsection" id="RightBar">
           <div id="RightBarInside" class="RightBarInside">
-              <p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost" class="Cost">10</span></p>
-              <p class="CountVar">Doodlers(+0.1 PPS): <span id="Doodlers">0</span></p>
-            <div id="buyDoodler" onclick="buyDoodler()" class="button">Hire Random Doodler</div>
-              <br/>
-              <p class="CountVar" onclick="PPS">Dabbler Cost: <span id="DabblerCost" class="Cost">30</span></p>
-              <p class="CountVar">Dabblers(+0.3 PPS): <span id="Doodlers">0</span></p>
-            <div id="buyDabbler" onclick="buyDabbler()" class="button">Hire Artistic Dabbler</div>
+          	<div class="sp">
+          		<p class="CountVar" onclick="PPS">Doodler Cost: <span id="DoodlerCost" class="Cost">10</span></p>
+              		<p class="CountVar">Doodlers(+0.1 PPS): <span id="Doodlers">0</span></p>
+            		<div id="buyDoodler" onclick="buyDoodler()" class="button">Hire Random Doodler</div>
+            	</div>
+            <br/>
+            <div class="sp">
+            	<p class="CountVar" onclick="PPS">Dabbler Cost: <span id="DabblerCost" class="Cost">30</span></p>
+              	<p class="CountVar">Dabblers(+0.3 PPS): <span id="Doodlers">0</span></p>
+            	<div id="buyDabbler" onclick="buyDabbler()" class="button">Hire Artistic Dabbler</div>
+            </div>
           </div>	
         </div>
         <!--END OF RIGHTBAR-->
