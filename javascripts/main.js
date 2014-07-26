@@ -2,10 +2,12 @@
 //===ALL VARIABLES OF GAME=======================================================================================//
 //===============================================================================================================//
 
-var colors = ["red", "blue", "yellow", "green", "orange", "black", "cyan", "magenta"]
 var pixels = 0;
 var Doodlers = 0;
 var Dabblers = 0;
+var Novice = 0;
+
+
 
 //===============================================================================================================//
 //===ALL FUNCTIONS===============================================================================================//
@@ -17,17 +19,6 @@ function pixelClick(number){
     pixels = pixels + number;
     document.getElementById("pixels").innerHTML = pixels;
 };
-
-function pixelBox(){
-    PIXELDIV
-    
-}
-
-function changeColor() {
-    //you can as well pass col reference as you do in your code
-    var BigPixelColor = document.getElementById("PIXELDIV").style.backgroundColor;
-    PIXELDIV.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
-}
 
 //BUILDINGS
 
@@ -56,7 +47,7 @@ function buyDabbler(){
     document.getElementById('DabblerCost').innerHTML = nextCostDabbler;
 };
 
-//OTHER GAME FUNCTIONS
+//===OTHER GAME FUNCTIONS==========================================================================================//
 
 function roundPixels() {
 pixels = +pixels.toFixed(1);	//rounds the pixel value to 1 decimal place (to stop things like 0.000000004)
