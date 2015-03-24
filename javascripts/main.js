@@ -51,6 +51,7 @@ function buyDabbler(){
 
 function TotalClicks() {
     TotalPixelClicks++;
+    document.getElementById("TotalPixelClicksI").innerHTML = TotalPixelClicks;
 };
 
 function roundPixels() {
