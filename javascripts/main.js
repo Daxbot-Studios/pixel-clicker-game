@@ -6,7 +6,7 @@ var pixels = 0;
 var Doodlers = 0;
 var Dabblers = 0;
 var Novice = 0;
-
+var TotalPixelClicks = 0;
 
 
 //===============================================================================================================//
@@ -27,8 +27,8 @@ function buyDoodler(){
     if(pixels >= DoodlerCost){ //checks that the player can afford the Doodler
         Doodlers = Doodlers + 1; //increases number of Doodlers
      pixels = pixels - DoodlerCost; //removes the pixels spent
-        document.getElementById('Doodlers').innerHTML = Doodlers; //updates the number of Doodlers for the user
-        document.getElementById('pixels').innerHTML = pixels; //updates the number of pixels for the user
+        document.getElementById('Doodlers').innerHTML = Doodlers;
+        document.getElementById('pixels').innerHTML = pixels;
     };
     
     var nextCostDoodler = Math.floor(10 * Math.pow(1.1,Doodlers)); //works out the cost of the next Doodler
@@ -48,6 +48,10 @@ function buyDabbler(){
 };
 
 //===OTHER GAME FUNCTIONS==========================================================================================//
+
+function TotalClicks() {
+    TotalPixelClicks++;
+};
 
 function roundPixels() {
 pixels = +pixels.toFixed(1);	//rounds the pixel value to 1 decimal place (to stop things like 0.000000004)
